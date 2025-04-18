@@ -1,0 +1,2 @@
+# speridian
+for speridianclient
