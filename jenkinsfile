@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage ('Build') {
+            steps {
+                echo 'Building'
+                sh 'cat free'
+                sh 'ps -ef'
+            }
+        }
+        stage ('Test') {
+            steps {
+                echo 'testing'
+                sh 'docker ps'
+            }
+        }
+        stage ('Deploy') {
+            steps {
+                sh 'cat 'love you souji''
+            }
+        }
+    }
+}
