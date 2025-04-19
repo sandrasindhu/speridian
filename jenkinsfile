@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Building'
                 cat free
-                ps -ef
+               sh ' ps -ef'
             }
         }
         stage ('Test') {
