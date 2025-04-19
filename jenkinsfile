@@ -16,7 +16,7 @@ pipeline {
         }
         stage ('Deploy') {
             steps {
-                sh 'cat 'love you souji''
+                sh 'echo "love you souji"'
             }
         }
     }
