@@ -4,19 +4,19 @@ pipeline {
         stage ('Build') {
             steps {
                 echo 'Building'
-                sh 'cat free'
-                sh 'ps -ef'
+                cat free
+                ps -ef
             }
         }
         stage ('Test') {
             steps {
                 echo 'testing'
-                sh 'docker ps'
+        
             }
         }
         stage ('Deploy') {
             steps {
-                sh 'echo "love you souji"'
+                echo "love you souji"
             }
         }
     }
